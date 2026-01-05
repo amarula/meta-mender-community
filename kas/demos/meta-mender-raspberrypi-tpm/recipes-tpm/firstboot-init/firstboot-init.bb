@@ -12,7 +12,8 @@ SRC_URI = " \
     file://firstboot-init.service \
 "
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
 
 SYSTEMD_SERVICE:${PN} = "firstboot-init.service"
 
