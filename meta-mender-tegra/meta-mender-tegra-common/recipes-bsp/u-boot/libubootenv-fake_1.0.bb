@@ -7,9 +7,9 @@ SRC_URI = " \
     file://fw_setenv \
 "
 
-PROVIDES += "libubootenv"
+S = "${UNPACKDIR}"
 
-S = "${WORKDIR}"
+PROVIDES += "libubootenv"
 
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
